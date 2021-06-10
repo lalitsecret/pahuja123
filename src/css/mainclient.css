@@ -1,0 +1,38 @@
+.mainclient 
+{
+	padding: 2%;
+}
+.mainclient h1
+{
+	color:#364fcc;
+	font-weight: normal;
+}
+.mainclient .flex
+{
+	display: flex;
+}
+.mainclient .item
+{
+	border-radius: 20px;
+	box-shadow: 0 0 10px silver;
+	padding: 20px;
+	text-align: center;
+	margin-right:40px;
+	width: 200px;
+}
+
+.mainclient .item img
+{
+	width: 100px;
+}
+.mainclient .item a
+{
+	display: block;
+	margin:10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.mainclient .item a:hover
+{
+	text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+let defaultUrl="https://altx.blob.core.windows.net/amlpdf/AccenturePilotImage.jpg?sv=2019-02-02&si=DragnetAlpha&sr=b&sig=xmo3PjQC26%2F2QKqZKwArVjMBlandZsdJtvfCaRU6ZKo%3D\;"
+if (row.ImageUrl !== null) {
+  str2= (<p>
+  			<a href={row.Link} target="_blank">  {row.Heading}  </a>
+	  		<div class="hideme box-post">
+	  			<div class="row">
+	  				<div class="col-4">
+	  					<img src={defaultUrl&&row.ImageUrl}/>
+	  				</div>
+	  				<div class="col-8">
+	  					<b>  {row.Heading}  </b>
+	  					<p>  {row.Description}  </p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</p>
+	  	<div class="pd-20">
+	  		<ul>  {str1}  </ul>
+	  	</div>)
+} else {
+  str2= (<p><a href="  row.Link  "target="_blank">  row.Heading 
+    </a><div class="hideme box-post"><div class="row"><div class="col-4"><img src="../images/jason-leung-SAYzxuS1O3M-unsplash.jpg" onerror="this.src=\https://altx.blob.core.windows.net/amlpdf/AccenturePilotImage.jpg?sv=2019-02-02&si=DragnetAlpha&sr=b&sig=xmo3PjQC26%2F2QKqZKwArVjMBlandZsdJtvfCaRU6ZKo%3D\;""></div><div class="col-8"><b> 
+    row.Heading  </b><p>  row.Description  </p></div></div></div></p><div class="pd-20"><ul>  ulData  </ul></div>);
+}
